@@ -55,3 +55,4 @@ services:
 networks:
   bluecherry_net:
     name: bluecherry_net
+    #external: true

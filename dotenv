@@ -1,23 +1,11 @@
-# Example .env file that can be used with docker or docker-compose to inject
-# the correct config values into the mysql and bluecherry containers
-#
-# To use this file, you must rename it from "dotenv" to ".env" and place it
-# in this same (base) directory- the same directory where "docker-compose.yml"
-# is located.
-#
-# !!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-# It is recommended to change at least the password values for use in a
-# production environment! Don't reuse our generic example passwords!
-#
-
 # Set to your desired timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-TZ=America/Chicago
+TZ=Asia/Jerusalem
 
 # Used by bluecherry to login to the MYSQL server
 MYSQL_ADMIN_LOGIN=root
 
 # Used by bluecherry as the password for the root account to create databases
-MYSQL_ADMIN_PASSWORD=oom1ieth2aeK
+MYSQL_ADMIN_PASSWORD=q1w2e3r4T!
 
 # Name of the MYSQL host. This is usually the name of the service in docker-compose.yml
 MYSQL_HOST=mysql
@@ -28,7 +16,7 @@ BLUECHERRY_DB_HOST=mysql
 BLUECHERRY_DB_USER=bluecherry
 
 # Password for above user.
-BLUECHERRY_DB_PASSWORD=rohche6PieWi
+BLUECHERRY_DB_PASSWORD=q1w2e3r4T!
 
 # Database name for the bluecherry database. Will delete if it exists.
 BLUECHERRY_DB_NAME=bluecherry
